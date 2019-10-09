@@ -1,0 +1,394 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	margin: 0;
+}
+.container {
+  max-width: 768px;
+  margin: auto;
+}
+header{
+	height: 80px;
+}
+
+
+/* navbar styles*/
+
+.mobile-menu {
+  display:block;
+  width:100%;
+width:100%;
+text-align:center;
+	position: relative;
+  margin:0 auto;
+}
+.mobile-menu ul {
+	list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:100%;
+  padding-top: 20px;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	width: 192px;
+	text-align: center;
+	color: #435993;
+	text-decoration: none;
+  margin-left:-5px;
+  padding: 10px 0;  
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #000;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 768px){
+	header{
+		height: 55px;
+	}
+  .mobile-menu .lines {
+    border-bottom: 15px double #435993; 
+    border-top: 5px solid #435993; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+.cheakboxs{
+	float: none !important;
+    display: block;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin: auto;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		display:block;
+	}
+}
+
+/* END navbar styles*/
+
+
+/* MAIN */
+
+#heroImage{
+	background-image: url(img/ian-froome-375650.jpg);
+	-webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
+	height: 160px;
+	background-size: 1920px;
+}
+h1{
+	font-size: 69px;
+	text-align: center;
+	font-weight: 100;
+	margin-top: -80px;
+	margin-bottom: 65px;
+}
+.icons{
+	margin: auto;
+	display: block;
+}
+h2{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 300;
+	margin:15px 0px;
+}
+p{
+	font-size: 16px;
+	max-width: 500px;
+	margin: auto;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+}
+p#sel1, p#sel2, p#sel3, p#sel4{
+	font-size: 14px;
+	max-width: 192px;
+	float: left;
+	width: 200px;
+	text-align: left;
+}
+p#sel4{
+	text-align: right !important;
+}
+p#sel4, p#sel1{
+	margin-top: 18px;
+}
+textarea{
+	max-width: 520px;  
+	max-height: 180px;   
+	width: 100%;  
+	height: 100%;
+	resize: none;
+	display: block;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px; 
+  	font-weight: 500; 
+  	padding: 10px;
+}
+textarea::-webkit-input-placeholder {
+  color: #c8c8c8;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #c8c8c8;
+  font-size: 20px; 
+  font-weight: 500; 
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: #c8c8c8; 
+  font-size: 20px; 
+  font-weight: 500;
+}
+
+textarea:-ms-input-placeholder {
+  color: #c8c8c8; 
+  font-size: 20px;
+  font-weight: 500; 
+}
+
+textarea::placeholder {
+  color: #c8c8c8; 
+  font-size: 20px;
+  font-weight: 500; 
+}
+.button{
+	display: block;
+	margin: 70px auto;
+	width: 115px;
+	height:35px;
+	background-color: #435993;
+	border-radius: 10px;
+	text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+/* Select-list */
+
+.chosen-select{
+	height: 60px;
+    width: 320px;
+    margin: auto;
+    display: block;
+    border: lightgray solid 1px;
+    border-radius: 5px;
+    color: #c8c8c8;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    text-align-last: center;
+}
+.chosen-select:active{
+	border: none;
+}
+option{
+	text-align: center;
+	text-align-last: center;
+	color: #435993;
+	font-size:20px;
+}
+.chosen-selectafter {
+  content: "v";
+}
+.chosen-select::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.chosen-select:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+.chosen-select::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+.chosen-select:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+/* Cheakboxs */
+.cheakboxs{
+	float: left;
+	width: 210px;
+	margin-left: 68px;
+}
+.cheakboxs div{
+	margin-top: 15px;
+}
+
+.cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #9098A9;
+  transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #435993;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.cbx span:last-child {
+  padding-left: 15px;
+  font-size: 16px;
+}
+.cbx:hover span:first-child {
+  background-color: #e9efff
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: #435993;
+  border-color: #435993;
+  animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+
+/* END Cheakboxs */

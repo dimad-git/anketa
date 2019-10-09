@@ -1,0 +1,41 @@
+div.float-text{
+	height: 60px;
+    max-width: 520px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: text;
+    margin: 13px auto;
+}
+div.float-text-focused{
+	height: 60px;
+    width: 520px;
+    border-radius: 5px;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);
+	margin: 13px auto;
+}
+.place-holder{
+	border: none;
+	outline-width: 0;
+	margin-left: 5px;
+	height: 0px;
+	width: 0px;
+	padding-top: 10px;
+}
+
+.place-holder-label{
+	color: #c8c8c8;
+	font-size: 24px;
+	display: block;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 14px;
+}
+
+.place-holder-floating-label{
+	color: lightgray;
+	font-size: 14px;
+	margin-left: 5px;
+}
+

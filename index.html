@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/floatPlaceHolder.css" />
+  <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="js/floatPlaceHolder.js"></script>
+  <script>
+		$(document).ready(function(){
+			$('.place-holder').placeHolder();
+		});
+	  </script>
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/jquery.range.css">
+  <script src="js/jquery.range.js"></script>
+</head>
+<body>
+
+<header>
+<div class="container">
+	<nav class="mobile-menu">
+<label for="show-menu" class="show-menu"><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu">
+		<li><a href="#" style="color:#000">Личная информация</a></li>
+		<li><a href="#">Опыт</a></li>
+		<li><a href="#">JavaScipt</a></li>
+		<li><a href="#">О себе</a></li>
+	</ul>
+</nav>
+</div>
+</header>
+
+<article>
+ <div id="heroImage"></div>
+ 
+ <div class="container">
+ 	<h1>Анкета</h1>
+ 	<img src="img/form.png" class="icons">
+ 	<h2>Личная информация</h2>
+ 	<input type="text" class="place-holder" place-holder="ФИО" />
+ 	<select class="chosen-select" data-placeholder="Год рождения">
+    <option value="" disabled selected hidden>Год рождения</option>
+    <option>1998</option>
+    <option>1997</option>
+    <option>1996</option>
+    <option>1995</option>
+    <option>1994</option>
+    <option>1993</option>
+    <option>1992</option>
+    <option>1991</option>
+    <option>1990</option>
+    <option>1989</option>
+    <option>1988</option>
+    <option>1987</option>
+    <option>1986</option>
+    <option>1985</option>
+    <option>1984</option>
+    <option>1983</option>
+    <option>1982</option>
+    <option>1981</option>
+  </select>
+	<input type="text" class="place-holder" place-holder="Место проживания" />
+	<input type="text" class="place-holder" place-holder="Skype" />
+	<input type="text" class="place-holder" place-holder="E-mail" />
+
+	<img src="img/experience.png" class="icons" style="padding-top: 70px">
+ <h2>Расскажите о своем опыте</h2>
+ <section>
+ <div class="cheakboxs" style="margin-left: 0px !important;">
+ 	<div>
+ 		<input class="inp-cbx" id="cbx1" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx1"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>БЭМ/OOCSS</span></label>
+ 	</div>
+ 	<div>
+ 		<input class="inp-cbx" id="cbx2" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx2"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>Stylus/LESS/SASS</span></label>
+ 	</div>
+ 	<div>
+ 		<input class="inp-cbx" id="cbx3" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx3"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>Работаю с SVG</span></label>
+ 	</div>
+ </div>
+
+ <div class="cheakboxs">
+ 	<div>
+ 		<input class="inp-cbx" id="cbx4" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx4"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>Верстаю семантично</span></label>
+ 	</div>
+ 	<div>
+ 		<input class="inp-cbx" id="cbx5" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx5"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>ES2015/ES2016</span></label>
+ 	</div>
+ 	<div>
+ 		<input class="inp-cbx" id="cbx6" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx6"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>Gulp/GRUNT</span></label>
+ 	</div>
+ </div>
+
+ <div class="cheakboxs">
+ 	<div>
+ 		<input class="inp-cbx" id="cbx7" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx7"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>Webpack</span></label>
+ 	</div>
+ 	<div>
+ 		<input class="inp-cbx" id="cbx8" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx8"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>jQuery</span></label>
+ 	</div>
+ 	<div>
+ 		<input class="inp-cbx" id="cbx9" type="checkbox" style="display: none;"/>
+		<label class="cbx" for="cbx9"><span>
+   		 <svg width="18px" height="15px" viewbox="0 0 15 10">
+     	 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+    	</svg></span><span>Ипользую Git</span></label>
+ 	</div>
+ </div>
+ </section>
+
+ <img src="img/js.png" class="icons" style="padding-top: 130px">
+ <h2>Уровень владения JavaScript</h2>
+ <p id="sel1">Не владею</p>
+ <p id="sel2">Использую готовые<br> решения</p>
+ <p id="sel3">Использую готовые решения и умею и переделывать</p>
+ <p id="sel4">Пишу сложный JS с нуля</p>
+
+ <input type="hidden" class="single-slider" value="0" />
+
+ <img src="img/about.png" class="icons" style="padding-top: 70px">
+ <h2>Расскажите о себе</h2>
+ <p>Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+ <textarea rows="4" placeholder="Понравилась тем, что"></textarea> 
+ <div class="button">Готово</div>
+
+ </div>
+ 
+</article>
+
+<footer>Подвал сайта</footer>
+ 
+</body>
+<script type="text/javascript">
+	$('.single-slider').jRange({
+    from: 0,
+    to: 4,
+    step: 1,
+    width: 770,
+    showLabels: false,
+    showScale: false,
+    snap: true,
+    theme: "theme-blue",
+});
+	if( $('.single-slider').jRange('getValue' == '3') )
+	$('.single-slider').jRange('setValue', '4');
+	
+
+</script>
+</html>
